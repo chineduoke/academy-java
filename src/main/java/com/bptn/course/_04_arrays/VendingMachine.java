@@ -31,7 +31,7 @@ public class VendingMachine {
 					break;
 			case 2: if(amt>8.99) {
 				System.out.println("change is: "+ (amt - 8.99));
-			} else if(amt==2.99){
+			} else if(amt==8.99){
 				System.out.println("Take your pepsi");
 			} else {System.out.println("Try again");}
 					break;
