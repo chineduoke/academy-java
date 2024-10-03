@@ -29,5 +29,14 @@ class BankAccount {
 		System.out.println("Account Number: "+accountNumber);
 		System.out.println("current bal: "+balance);
 	}
+	
+	@Override
+	public boolean equals(Object other) {
+		// Type cast other to your Classname
+		BankAccount acc = (BankAccount) other;
+		// Check if attributes are equal
+		return (this.balance == acc.balance);
+		// && this.name.equals(acc.name);
+	}
 
 }

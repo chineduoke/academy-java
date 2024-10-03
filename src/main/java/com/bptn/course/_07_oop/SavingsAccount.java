@@ -12,5 +12,19 @@ class SavingsAccount extends BankAccount {
 		double interest = getBalance() * interestRate/100;
 		deposit(interest);
 	}
+	
+	@Override
+	public boolean equals(Object other) {
+		// Type cast other to your Classname
+		SavingsAccount acc = (SavingsAccount) other;
+		// Check if attributes are equal
+		return super.equals(acc) && (this.interestRate == acc.interestRate);
+
+	}
+	
+	@Override
+    public String toString() {
+        return super.toString() + ", " + interestRate;
+    }
 
 }
