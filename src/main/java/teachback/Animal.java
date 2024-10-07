@@ -4,7 +4,7 @@ class Animal {
 	void eat(){
 		System.out.println("Animals Eat");
 	} 
-
+	
 	
 	@Override
 	public String toString() {
