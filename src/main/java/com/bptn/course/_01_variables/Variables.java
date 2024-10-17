@@ -5,16 +5,15 @@ public class Variables {
 	// syntax, naming, class
 
 	public static void main(String[] args) {
-
-	}
-
-	public static int mystery(int[] elements, int target) {
-		for (int j = 0; j < elements.length; j++) {
-			if (elements[j] == target) {
-				return j;
+		int i = 0;
+		while (i <= 4) {
+			for (int j = 0; j < 3; j++) {
+				System.out.println("Hi!");
 			}
+			i++;
 		}
-		return -1;
+
+		// System.out.println(x + "" + y);
 	}
 
 }
